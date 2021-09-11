@@ -4,38 +4,60 @@ Peach Color: #f79b8c
 text color antique white
 */
 
-.outside {
+main {
     background-color: #ed1b3e;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-}
-
-.blatant-classism {
-    size: 75%;
-}
-
-.cont1 {
-    background-color: #f79b8c;
-    display: flex;
-    flex-direction: row;
-    text-align: left;
-    size: 50%;
-}
-
-img{
+    padding: 50px;
     width: 50%;
-    height: 50%;
+    margin: auto;
 }
 
-.cont2 {
+body {
+    padding: 50px;
+}
+
+
+.container {
+    text-align: center;
+    font-family: Poppins;
+    font-size: small;
+    color: white;
+    display: grid;
+    padding: 10px;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr; */
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 300px 300px;
+    grid-template-areas: 
+    "top-left top-right"
+    "bottom-left bottom-right";
+}
+
+.top-left {
+    grid-area: top-left;
     background-color: #f79b8c;
-    display: flex;
-    flex-direction: row;
-    text-align: right;
-    size: 50%;
+}
+
+.top-right {
+    grid-area: top-right;
+    background-image: url(images/top-right.jpg);
+    background-size: cover;
+}
+
+
+.bottom-left {
+    grid-area: bottom-left;
+    background-image: url(images/bottom-left.jpeg);
+    background-size: cover;
+}
+
+.bottom-right {
+    grid-area: bottom-right;
+    background-color: #f79b8c;
+}
+
+h1 {
+    color: #ed1b3e;
+    text-transform: uppercase;
 }
 
 
