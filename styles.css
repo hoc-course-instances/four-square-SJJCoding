@@ -22,7 +22,6 @@ body {
     font-size: small;
     color: white;
     display: grid;
-    padding: 10px;
     /* grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr; */
     grid-template-columns: 1fr 1fr;
@@ -30,6 +29,7 @@ body {
     grid-template-areas: 
     "top-left top-right"
     "bottom-left bottom-right";
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 
 .top-left {
